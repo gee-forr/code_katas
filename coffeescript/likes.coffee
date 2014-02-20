@@ -18,7 +18,7 @@ likes = (names) ->
   if names.length < 4
     like_str += "#{joiner(names)} like this"
   else
-    like_str += "#{joiner(names[0..1])} and #{names.length - 2} others like this"
+    like_str += "#{names[0]}, #{names[1]} and #{names.length - 2} others like this"
 
   like_str
 
