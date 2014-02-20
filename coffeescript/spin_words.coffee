@@ -1,15 +1,17 @@
-#!/usr/bin/env coffeescript
+#!/usr/bin/env coffee
 
-spinwords = (sentence) ->
+spinWords = (sentence) ->
   words         = sentence.split(' ')
   spun_sentence = ''
 
   for word in words
     if word.length >= 5
-      spun_sentece += word.split('').reverse().join('')
+      spun_sentence += "#{word.split('').reverse().join('')} "
     else
-      spun_sentece += word
+      spun_sentence += "#{word} "
 
-  spun_sentece
+  spun_sentence.trim()
 
-
+console.log spinWords( "Hey fellow warriors" )
+console.log spinWords( "This is a test")
+console.log spinWords( "This is another test" )
