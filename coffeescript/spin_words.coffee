@@ -12,6 +12,6 @@ spinWords = (sentence) ->
 
   spun_sentence.trim()
 
-console.log spinWords( "Hey fellow warriors" )
-console.log spinWords( "This is a test")
-console.log spinWords( "This is another test" )
+#console.log spinWords( "Hey fellow warriors" )
+#console.log spinWords( "This is a test")
+#console.log spinWords( "This is another test" )
